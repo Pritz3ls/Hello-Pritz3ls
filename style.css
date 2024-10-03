@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Cardenio;
+    src: url(assets/CardenioModern-Regular.otf);
+}
+@font-face {
+    font-family: Cardenio-Bold;
+    src: url(assets/CardenioModern-Bold.otf);
+}
+
+div{
+    font-family: 'Cardenio', sans-serif;
+}
+
+/* Palette to use */
+:root{
+    --col1: #fff1d8;
+    --col3: #8c8394;
+    --text: #849ca1;
+    --highlight: #0e367c;
+    --link: #e03a3e;
+}
+
+.web-label{    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+.web-label img{
+    height: 400px;
+    width: 400px;
+}
+
+body{
+    background-color: var(--col1);
+    color: var(--highlight);
+    /* margin: 0; */
+    padding: 0;
+}
+a{
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 2.5px solid var(--link);
+}
+.page-break{
+    text-align: center;
+    font-family: 'Cardenio-Bold', sans-serif;
+    color: var(--highlight);
+    font-size: 50px;
+    margin: 100px 0 25px;
+}
+
+.start,.work{
+    box-sizing: border-box;
+    margin: 0 auto 10px;
+    width: 700px;
+    height: 100vh;
+}
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.start img{
+    border-radius: 50%;
+    width: 200x;
+    height: 200px;
+}
+.highlight{
+    font-family: 'Cardenio-Bold';
+    color: var(--highlight);
+    line-height: 0px;
+}
+
+/* Works */
+.work{
+    height: 60vh;
+}
+.item-container{
+    margin: auto 0;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.item-container img{
+    width: 320px;
+    height: 240px;
+
+    border: var(--highlight) dashed;
+}
+
+
+/* Animation */
+.work,.start{
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+@media(prefer-reduced-motion){
+    .work{
+        transition: none;
+    }
+}
+
+/* Oter links */
+.link{
+    display: flex;
+    height: 64px;
+    gap: 25px;
+    font-size: 20px;
+    text-align: left;
+
+    align-items: center;
+    justify-content: center;
+}
+.link h2{
+    font-size: 30px;
+    width: 350px;
+}
+.link img{
+    height: 64px;
+    width: 64px;
+}
+
+/* Footer */
+footer{
+    font-family: 'Cardenio-Bold', sans-serif;
+    font-size: 20px;
+    color: var(--text);
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
