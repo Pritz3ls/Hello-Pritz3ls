@@ -1,10 +1,10 @@
 @font-face {
     font-family: Cardenio;
-    src: url(assets/CardenioModern-Regular.otf);
+    src: url(assets/fonts/CardenioModern-Regular.otf);
 }
 @font-face {
     font-family: Cardenio-Bold;
-    src: url(assets/CardenioModern-Bold.otf);
+    src: url(assets/fonts/CardenioModern-Bold.otf);
 }
 
 div{
