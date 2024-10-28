@@ -20,6 +20,42 @@ div{
     --link: #e03a3e;
 }
 
+.navbar-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    
+    height: 35px;
+    background-color: var(--col1);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-items{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    
+    color: var(--link);
+    font-family: inherit;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 2.5px solid var(--link);
+}
+
+.content-window{
+    overflow: auto;
+}
+
 .web-label{    
     display: flex;
     justify-content: center;
