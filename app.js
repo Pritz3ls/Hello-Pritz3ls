@@ -15,5 +15,8 @@ const workElements = document.querySelectorAll('.work');
 workElements.forEach((el) => observer.observe(el));
 
 function scrollToView(id){
-    document.getElementById(id).scrollIntoView();
+    // document.getElementById(id).scrollIntoView();
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    });
 }
