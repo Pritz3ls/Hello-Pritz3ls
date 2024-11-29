@@ -20,3 +20,8 @@ function scrollToView(id){
         behavior: 'smooth'
     });
 }
+
+function mailPopupState(){
+    var mail = document.getElementById('mail');
+    mail.classList.toggle("show-mail");
+}

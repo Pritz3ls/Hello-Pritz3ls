@@ -29,7 +29,7 @@ div{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 5;
     
     height: 35px;
     background-color: var(--col1);
@@ -180,6 +180,13 @@ a{
     font-size: 30px;
     width: 350px;
 }
+.link button{
+    font-weight: bold;
+    font-size: 35px;
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 2.5px solid var(--link);
+}
 .link img{
     height: 64px;
     width: 64px;
@@ -196,7 +203,108 @@ footer{
     text-align: center;
 }
 
+.mail-popup{
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    opacity: 0%;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+.show-mail{
+    opacity: 100%;
+    visibility: visible;
+    transition: all 0.3s;
+}
+.mail-popup .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--col1);
+    border: 2px solid var(--highlight);
+    border-radius: 2px 2px 2px 20px;
+    padding: 10px 15px;
+}
+.mail-popup .wrapper img{
+    width: 124px;
+    height: 124px;
+}
+.wrapper h2{
+    margin: 0;
+    font-weight: normal;
+}
+.wrapper form label{
+    font-size: 20px;
+}
+.wrapper form input[type="email"],input[type="text"]{
+    width: 100%;
+    font-family: 'Cardenio';
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 2px dashed var(--highlight);
+    padding: 8px 5px;
+    color: var(--highlight);
+}
+.wrapper form .message{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper form textarea{
+    width: 100%;
+    min-height: 48px;
+    min-width: 230px;
+    
+    max-height: 248px;
+    max-width: 348px;
+
+    font-family: 'Cardenio';
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 2px dashed var(--highlight);
+    padding: 8px 5px;
+    color: var(--highlight);
+}
+.wrapper form input[type="text"]:focus,input[type="email"]:focus, textarea:focus{
+    outline: none;
+}
+.wrapper form .submit{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0 0;
+}
+.wrapper form input[type="submit"]{
+    font-family: 'Cardenio';
+    background-color: transparent;
+    color: var(--link);
+    letter-spacing: 1px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid var(--link);
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
+    .web-label img{
+        width: 248px;
+        height: 224px;
+    }
     .work, .start{
         width: 100%;
         text-align: left;
@@ -208,7 +316,7 @@ footer{
         text-align: left;
     }
     h1{
-        font-size: 30px;
+        font-size: 24px;
     }
     h2{
         font-size: 24px;
