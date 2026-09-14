@@ -1,127 +1,370 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pritzels Portfolio</title>
-    <script defer src="app.js" ></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/pc.png">
+    <title>Hello Pritzels</title>
+
+    <link rel="stylesheet" href="assets/styles/root.css">
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
 </head>
+<!-- Whole strip content -->
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar-wrapper">
-        <div class="navbar-items">
-            <button type="button" onclick="scrollToView('home')">Home</button>
-            <button type="button" onclick="scrollToView('about')">About</button>
-            <button type="button" onclick="scrollToView('work')">Works</button>
-            <button type="button" onclick="scrollToView('contact')">Contact</button>
+    <!-- Shortcuts -->
+    <div class="shortcuts">
+        <div class="nav">
+            <button type="button" onclick="showPage('landing')">
+                <img src="assets/icons/pc.png" alt="">
+                <p>Home</p>
+            </button>
+            <button type="button" onclick="showPage('games')">
+                <img src="assets/icons/projects.png" alt="" srcset="">
+                <p>Games</p>
+            </button>
+            <button type="button" onclick="showPage('projects')">
+                <img src="assets/icons/contact2.png" alt="" srcset="">
+                <p>Projects</p>
+            </button>
+            <button type="button" onclick="showPage('arts')">
+                <img src="assets/icons/documents2.png" alt="" srcset="">
+                <p>Arts</p>
+            </button>
+            <button type="button" onclick="showPage('contact')">
+                <img src="assets/icons/contact3.png" alt="" srcset="">
+                <p>Contact</p>
+            </button>
         </div>
     </div>
-    <!-- Start Label -->
-    <div class="web-label" id="home">
-        <img src="assets/animated/label.gif" alt="">
-    </div>
-    <div class="container">
-        <!-- Start Page -->
-        <div class="start" id="about">
-            <!-- Profile Image -->
-            <img src="assets/static/profile.jpg" alt="" class="profile-image">
-            <!-- Tagline -->
-            <h2 class="tagline">
-                <div class="highlight">
-                    <h1>HELLO!</h1>
+
+    <!-- Landing -->
+    <div class="content" style="display: block;" id="landing">
+        <div class="titlebar">
+            Home
+        </div>
+        <div class="landing">
+            <div class="banner">
+                <img src="assets/banner/home.png" alt="" srcset="">
+            </div>
+            <hr>
+            <div class="row">
+                <div class="about">
+                    <p class="tagline">
+                        <!-- <img src="assets/images/profile-opaq.png" alt=""> -->
+                        Hi! Im Prince Marco Guerrero, also known as
+                        <span style="font-weight: bold;">Pritzels</span>,
+                        a passionate game developer who loves making game-focused applications and experimenting with existing gameplay mechanics. 
+                        I also do arts in my freetime, paintings and concept arts for games. 
+                        </br></br>Interested or got an interesting project?</br>Send me a an email at <a href="mailto:pritzels.dev@gmail.com">pritzels.dev@gmail.com</a>.
+                    </p>
                 </div>
-                I'm Prince Marco Guerrero, also known as <b class="highlight">Pritzels</b>, im a passionate
-                indie game developer who loves to make games for fun.
-                <!-- Quick Contact Link -->
-                <p>Interested? You can send me a message at <a href="princefinn14@gmail.com">princefinn14@gmail.com</a></p>
-            </h2>
-        </div>
 
-        <!-- Creating a visually stunning games -->
-        <div class="work" id="work">
-            <h1 class="highlight">Creating visually stunning games</h1>
-            <div class="item-container">
-                <img src="assets/works/project-01.jpg" alt="" class="item-img">
-                <h2>I focus on crafting games with striking visuals and polished design, ensuring a visually immersive experience that enhances gameplay.</h2>
+                <div class="skills">
+                    <div class="c">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>GDScript</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="c">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Unity Engine</li>
+                            <li>Godot</li>
+                            <li>Node.js</li>
+                            <li>Git & Github</li>
+                            <li>Trello</li>
+                        </ul>
+                    </div>
+                    <div class="c">
+                        <h3>Fields</h3>
+                        <ul>
+                            <li>Gameplay</li>
+                            <li>Scripting</li>
+                            <li>User Interface</li>
+                            <li>Visual</li>
+                            <li>Tools</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Fun and entertaining games -->
-        <div class="work">
-            <h1 class="highlight">Fun and Entertaining</h1>
-            <div class="item-container">
-                <img src="assets/works/project-03.png" alt="" class="item-img">
-                <h2>My goal is to develop games that offer players a fun, engaging experience that keeps them coming back for more.</h2>
-            </div>
-        </div>
-        <!-- Emphasize on how passionate you are in your work -->
-        <div class="work">
-            <h1 class="highlight">Games made with passion</h1>
-            <div class="item-container">
-                <img src="assets/works/project-04.png" alt="" class="item-img">
-                <h2>Every game I create is a labor of love, driven by a deep passion for the art of game development and a commitment to delivering exceptional quality.</h2>
-            </div>
-        </div>
+    </div>
 
-        <!-- Work Demo -->
-        <h1 class="page-break">Demos</h1>
-        
-        <div class="work">
-            <h1 class="highlight">HellSprint</h1>
-            <div class="item-container">
-                <img src="assets/works/project-02.png" alt="">
-                <!-- this is a final project for Advance Database,  -->
-                <!-- You can try out HellSprint, it's a fast paced shooter game set in hell wherein you need to survive -->
-                <!--  This is a final project for Advance Database Management System, we integrated a database using SQLite. -->
-                <h2>HellSprint is a fast paced shooter game set in hell wherein you need to kill demons to survive. You can try out the demo <a href="https://github.com/Pritz3ls/HellSprint" target="_blank">here.</a></h2>
+    <!-- Games -->
+    <div class="content" style="display: none;" id="games">
+        <div class="titlebar">
+            Games
+        </div>
+        <!-- BOX COVER MENU -->
+        <div class="boxCoverMenu" id="boxCoverMenu">
+            <div class="banner">
+                <img src="assets/banner/games.png" alt="" srcset="">
+            </div>
+            <p>
+                A collection of projects that I’ve personally created, worked on, and brought to life, showcasing the ideas, 
+                creativity, and effort I’ve put into each one. (Commissioned works from Fiverr are not included.)
+            </p>
+            <div class="grid">
+                <div class="game" onclick="showProject('hell')">
+                    <img src="assets/boxCoverArts/HellSprint-BoxCoverArt.gif" alt="">
+                    <p>HellSprint</p>
+                </div>
+                <div class="game" onclick="showProject('baseball')">
+                    <img src="assets/boxCoverArts/BaseballDX-BoxCoverArt.gif" alt="">
+                    <p>BaseballDX</p>
+                </div>
+                <div class="game" onclick="showProject('cow')">
+                    <img src="assets/boxCoverArts/FuniCowGame-BoxCoverArt.gif" alt="">
+                    <p>Funi Cow Game</p>
+                </div>
+                <div class="game" onclick="showProject('horror')">
+                    <img src="assets/boxCoverArts/WIP-BoxCoverArt.gif" alt="">
+                    <p>BleakRidge (WIP)</p>
+                </div>
             </div>
         </div>
+        <div class="games">
+            <!-- HellSprint -->
+            <div class="games hell" style="display: none;" id="hell">
+                <div class="back">
+                    <button type="button" onclick="showBoxCoverMenu()">Go Back</button>
+                </div>
 
-        <!-- Page Break -->
-        <h1 class="page-break"></h1>
+                <h2 class="tag">HellSprint</h2>
+                <div class="info">
+                    <p>HellSprint is a Fast Paced first person shooter where one aims to survive through an increasing difficulty of swarms of enemies. Survive long enough and gain a ranking in the leaderboard, and prove you’re the best player out there.</p>
+                </div>
+                <div class="available">
+                    <p>Available on my Github link.</p>
+                </div>
 
-        <!-- Other Links -->
-        <div class="work" id="contact">
-            <div class="link">
-                <img src="assets/animated/email.gif" alt="">
-                <h2>You can email me <a href="mailto:princefinn14@gmail.com">HERE</a></h2>
+                <img src="assets/images/test.gif" alt="" srcset="">
+                <img src="assets/images/test.gif" alt="" srcset="">
+                <img src="assets/images/test.gif" alt="" srcset="">
+                <img src="assets/images/test.gif" alt="" srcset="">
             </div>
-            <div class="link">
-                <img src="assets/animated/oldgames.gif" alt="">
-                <h2>Play some of my old <a href="https://devpritzels.itch.io" target="_blank">Games</a></h2>
+    
+            <!-- BaseballDX -->
+            <div class="games baseball" style="display: none;" id="baseball">
+                <div class="back">
+                    <button type="button" onclick="showBoxCoverMenu()">Go Back</button>
+                </div>
+                
+                <h2>BaseballDX</h2>
+                <div class="info">
+                    <p>BaseballDX is a atari inspired baseball game mixed with Wii Baseball gameplay mechanics</p>
+                </div>
+                <div class="available">
+                    <p>Live Demo available to play here!</p>
+                </div>
+
+                <img src="assets/images/baseball.gif" alt="" srcset="">
+                <img src="assets/images/baseball.gif" alt="" srcset="">
+                <img src="assets/images/baseball.gif" alt="" srcset="">
+                <img src="assets/images/baseball.gif" alt="" srcset="">
             </div>
-            <div class="link">
-                <img src="assets/animated/twitter.gif" alt="">
-                <h2>Follow me on <a href="https://twitter.com/pritzels_devart" target="_blank">Twitter</a></h2>
+
+            <!-- Funi Cow Game -->
+            <div class="games cow" style="display: none;" id="cow">
+                <div class="back">
+                    <button type="button" onclick="showBoxCoverMenu()">Go Back</button>
+                </div>
+                
+                <h2>Funi Cow Game</h2>
+                <div class="info">
+                    <p>Funi Cow Game is a endless score maker game where you control a upside-down cow and perform tricks to gain scores and momentum.</p>
+                </div>
+                <div class="available">
+                    <p>Live Demo available to play here!</p>
+                </div>
+
+                <img src="assets/images/cow.gif" alt="" srcset="">
+                <img src="assets/images/cow.gif" alt="" srcset="">
+                <img src="assets/images/cow.gif" alt="" srcset="">
+                <img src="assets/images/cow.gif" alt="" srcset="">
             </div>
+            
+            <!-- BleakRidge -->
+            <div class="games horror" style="display: none;" id="horror">
+                <div class="back">
+                    <button type="button" onclick="showBoxCoverMenu()">Go Back</button>
+                </div>
+                
+                <h2>BleakRidge</h2>
+                <div class="info">
+                    <p>BleakRidge is a PSX-styled horror game mixed with cute characters but with a twisted and dark story.</p>
+                </div>
+                <div class="available">
+                    <p>TBD</p>
+                </div>
+
+                <img src="assets/images/spooked.gif" alt="" srcset="">
+                <img src="assets/images/spooked.gif" alt="" srcset="">
+                <img src="assets/images/spooked.gif" alt="" srcset="">
+                <img src="assets/images/spooked.gif" alt="" srcset="">
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="content" style="display: none;" id="projects">
+        <div class="titlebar">
+            Projects
+        </div>
+        <div class="projects">
+            <div class="banner">
+                <img src="assets/banner/projects.png" alt="" srcset="">
+            </div>
+            <hr>
+            <p>
+                Other projects i've worked on, softwares, tools,</br>websites, and prototypes.
+            </p>
+            <div class="row">
+                <div class="project">
+                    <div class="desc">
+                        <div class="title">
+                            <h4><img src="assets/icons/documents.png" alt="">ManuVox</h4>
+                        </div>
+                        <p>
+                            I’m the lead developer of ManuVox, an offline Filipino Sign Language recognition application built with 
+                            Unity and C# for Android. I worked on the real-time gesture recognition system using MediaPipe, gesture 
+                            logic, ScriptableObjects, Addressables, and Android Text-to-Speech, with Java integration for native 
+                            Android functionality.
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="desc">
+                        <h4><img src="assets/icons/documents.png" alt="">Carbonet</h4>
+                        <p>
+                            Carbonet is a greenhouse gas emissions calculator built to process categorized environmental data and 
+                            generate emission results based on defined metrics. I helped develop the web system alongside IoT device 
+                            development and integration, working with PHP, MySQL, HTML5, Tailwind CSS, JavaScript, Python, OpenCV, 
+                            and PyTorch, including a Temporal Fusion Transformer analytics engine.
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="desc">
+                        <h4><img src="assets/icons/documents.png" alt="">Win98Chat</h4>
+                        <p>
+                            Win98Chat is a recreation of the old MSN Messenger experience from the Windows 98 era. I used Node.js, 
+                            Express, and Socket.IO to power the web app's real-time messaging features. You can invite your friends 
+                            to try it out, chat anonymously, and play around with the retro-inspired messenger.
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="desc">
+                        <h4><img src="assets/icons/documents.png" alt="">LyricsFinder</h4>
+                        <p>
+                            LyricsFinder is a project I worked on because I found it slow and difficult to find lyrics for less common 
+                            songs. I used the Lyrics.ovh API to search and retrieve lyrics, and designed the interface around the visual 
+                            language of Windows 95 to make it more appealing and easy to understand.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Arts -->
+    <div class="content" style="display: none;" id="arts">
+        <div class="titlebar">
+            Artworks
+        </div>
+        <div class="art">
+            <div class="banner">
+                <img src="assets/banner/artworks.png" alt="" srcset="">
+            </div>
+            <hr>
+            <div class="gallery">
+                <img src="assets/arts/reserve.png" alt="Saved you a seat, Dream just for us." onclick="viewArt(this)">
+                <img src="assets/arts/cool.png" alt="Sunshine, Sunglass, Sunflower" onclick="viewArt(this)">
+                <img src="assets/arts/house.png" alt="Finding home in the wild." onclick="viewArt(this)">
+                <img src="assets/arts/broken.png" alt="Broken pieces, beatiful truths." onclick="viewArt(this)">
+                <img src="assets/arts/fallen.png" alt="Fallen Angel." onclick="viewArt(this)">
+                <img src="assets/arts/lost.png" alt="The ghost of touch, lingering in the dark." onclick="viewArt(this)">
+            </div>
+            <p></p>
         </div>
     </div>
     
-    <!-- Contact Details -->
-    <!-- <div class="mail-popup" id="mail">
-        <div class="wrapper">
-            <img src="assets/animated/about-me.gif" alt="">
-            <h2>Send me a message.</h2>
-            <form action="contact.php" method="post">
-                <div>
-                    <label for="text">Name</label>
-                    <input type="text" name="name" placeholder="Your name here">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Your email here">
-                </div>
-                <div class="message">
-                    <label for="message">Message</label>
-                    <textarea name="message" placeholder="Your message here"></textarea>
-                </div>
-                <div class="submit">
-                    <button type="button" onclick="mailPopupState()">Cancel</button>
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
+    <!-- Contacts -->
+    <div class="content" style="display: none;" id="contact">
+        <div class="titlebar">
+            Contact
         </div>
-    </div> -->
+    
+        <div class="contact">
+            <div class="banner">
+                <img src="assets/banner/contacts.png" alt="" srcset="">
+            </div>
+            <hr>
+            <div class="book">
+                <div class="intro">
+                    <p>
+                        Want to get in touch with me? Pick your favorite method of communication below and 
+                        send a little message my way. I'll get back to you as soon as I escape my computer.
+                        <br><br>
+                        I'm always open to new projects and interesting ideas, so if you've got something in mind, send me a message!
+                    </p>
+                </div>
+                <div class="addresses">
+                    <ul class="long">
+                        <!-- <li>Discord: devpritzels</li> -->
+                        <li>Email: <a href="mailto:pritzels.dev@gmail.com">pritzels.dev@gmail.com</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/pritzels-2b32b83a6">linkedin.com/pritzels</a></li>
+                        <li>GitHub: <a href="https://github.com/Pritz3ls">github.com/Pritz3ls</a></li>
+                        <li>Fiverr: <a href="https://www.fiverr.com/s/bkd0RLm">fiverr.com/Pritzels</a></li>
+                        <li>Itchio: <a href="https://itch.io/profile/devpritzels">itch.io/devpritzels</a></li>
+                        <li>Instagram: <a href="http://instagram.com/pritzels_devart">instagram.com/pritzels_devart</a></li>
+                    </ul>
+                    <ul class="short">
+                        <li><a href="mailto:pritzels.dev@gmail.com">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/pritzels-2b32b83a6">LinkedIn</a></li>
+                        <li><a href="https://github.com/Pritz3ls">GitHub</a></li>
+                        <li><a href="https://www.fiverr.com/s/bkd0RLm">Fiverr</a></li>
+                        <li><a href="https://itch.io/profile/devpritzels">Itchio</a></li>
+                        <li><a href="http://instagram.com/pritzels_devart">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Art Preview -->
+    <div class="artpreview" onclick="hideArt()" id="preview" style="display: none;">
+        <div class="expanded">
+            <img src="assets/images/clouds.png" alt="" id="expanded">
+            <p id="artText">Art Name</p>
+        </div>
+    </div>
+
+    <!-- Backdrop -->
+    <div class="sky"></div>
+    <div class="grassfield">
+        <img src="assets/images/greenhill-transp.png" alt="">
+    </div>
 </body>
-<footer>Font used <a href="https://www.dafont.com/cardenio-modern.font" target="_blank">Cardenio</a> by Nils Cordes</footer>
+
+<footer>
+    <p>
+        Developed by Pritzels
+    </p>
+    <p>
+        Designed and Art by Pritzels
+    </p>
+</footer>
+<script src="assets/scripts/script.js"></script>
 </html>

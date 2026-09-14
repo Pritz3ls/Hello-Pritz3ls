@@ -1,0 +1,35 @@
+/* Tablet */
+@media (max-width: 768px) {
+    .artpreview .expanded{
+        width: 85%;
+    }
+    .contact .intro{
+        max-width: 70%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .content .boxCoverMenu .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .art .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .art .gallery img {
+        height: 150px;
+    }
+
+    .contact .addresses .long{
+        display: none;
+    }
+    .contact .addresses .short{
+        display: block;
+    }
+
+    .artpreview .expanded{
+        width: 80%;
+    }
+}

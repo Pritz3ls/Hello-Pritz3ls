@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: scroll;
+    background-image: url("../images/green.jpg");
+    /* background-size: cover; */
+    background-size: cover;
+    background-repeat: repeat;
+    user-select: none
+}
+
+.sky{
+    margin: 0;
+    padding: 0;
+    background: #0062ff;
+    background: linear-gradient(180deg, rgba(0, 98, 255, 1) 0%, rgba(0, 34, 255, 1) 45%, rgba(78, 101, 217, 1) 57%, rgba(230, 238, 255, 1) 100%);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80%;
+    z-index: -10;
+}
+.grassfield{
+    margin: 0 auto 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    /* background-color: green; */
+    height: 100%;
+}
+.grassfield img{
+    width: 100vw;
+    height: 100%;
+    object-fit: fill;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+p,h1,h2,h3,h4,ul,li{
+    cursor: default;
+}
