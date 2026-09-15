@@ -1,8 +1,8 @@
-.nav{
+.nav {
     display: flex;
 }
 
-.titlebar{
+.titlebar {
     /* margin: 0px auto 0; */
     padding: 1px 8px;
     font-weight: bold;
@@ -10,13 +10,13 @@
     text-align: left;
     position: relative;
 
-    background-image: linear-gradient(to right, darkblue,blue);
+    background-image: linear-gradient(to right, darkblue, blue);
     background-color: blue;
     color: white;
     border-bottom: 2px solid #c0c0c0;
 }
 
-.shortcuts{
+.shortcuts {
     text-align: center;
     margin: 0 auto 5px;
     max-width: 960px;
@@ -24,23 +24,26 @@
     justify-content: space-evenly;
     gap: 50px;
 }
-.shortcuts button{
+
+.shortcuts button {
     background-color: transparent;
     cursor: pointer;
     color: white;
     border: none;
     text-decoration: none;
 }
-.shortcuts button:active{
+
+.shortcuts button:active {
     color: darkmagenta;
 }
-.shortcuts p{
+
+.shortcuts p {
     line-height: 0px;
     text-decoration: underline;
 }
 
 /* Content */
-.content{
+.content {
     text-align: center;
     margin: 0 auto 0;
     max-width: 960px;
@@ -51,196 +54,222 @@
     border: 2px solid;
     border-color: white black black white;
 }
-.content .info{
+
+.content .info {
     position: relative;
     margin: 0em 2em 2em 2em;
 }
 
 /* Landing Section */
-.landing .tagline{
+.landing .tagline {
     font-weight: 100;
     position: relative;
     /* max-width: 60%; */
     margin: 1em auto;
-    text-align: justify;
+    text-align: left;
     margin: 5px;
 }
-.landing .banner img{
+
+.landing .banner img {
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
 
-.landing .row{
-    /* display: flex; */    
+.landing .row {
+    /* display: flex; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
 }
-.landing .skills{
+
+.landing .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
-.landing .about{
+
+.landing .about {
     background-color: white;
     border: 2px inset grey;
     z-index: 1;
 }
-.landing .skills{
+
+.landing .skills {
     /* border: 2px solid white; */
     background-color: #c0c0c0;
 }
-.landing h3{
+
+.landing h3 {
     /* line-height: 0; */
     margin: 0 0 0 0;
     /* border: 2px outset white; */
 }
-.landing ul{
+
+.landing ul {
     text-align: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-.landing li{
+
+.landing li {
     border: 2px inset white;
     background-color: white;
 }
 
 /* Games Section */
-.content .boxCoverMenu{
+.content .boxCoverMenu {
     background-color: black;
     padding: 0 0 5px 0;
     color: white;
 }
+
 .content .boxCoverMenu .grid {
     margin: 5px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
-.boxCoverMenu p{
+
+.boxCoverMenu p {
     margin: 0 auto 0;
     max-width: 70%;
 }
-.boxCoverMenu .banner img{
+
+.boxCoverMenu .banner img {
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
 
-.game{
+.game {
     padding: 5px;
     color: white;
 }
-.game p{
+
+.game p {
     /* line-height: 0; */
     margin: 0 auto 0;
 }
-.game:hover{
+
+.game:hover {
     text-decoration: underline;
     color: blue;
     cursor: pointer;
 }
 
-.games .back{
+.games .back {
     display: flex;
     justify-content: start;
 }
-.games .back button{
+
+.games .back button {
     background-color: transparent;
     text-decoration: underline;
     color: white;
     border: none;
     cursor: pointer;
 }
-.games .back button:hover{
+
+.games .back button:hover {
     color: blue;
 }
+
 /* Games Invididual Designs */
-.games{
+.games {
     margin: 5px 5px 5px 5px;
 }
 
 /* Hell */
-.games .hell{
+.games .hell {
     border: 2px grey;
     padding: 5px;
 
     color: white;
     background-color: black;
 }
-.games .hell .tag{
+
+.games .hell .tag {
     color: darkred;
     font-weight: 800;
     font-size: 3em;
 }
+
 /* Baseball */
-.games .baseball{
+.games .baseball {
     border: 2px inset grey;
     /* margin: 5px 5px 5px 5px; */
     padding: 5px;
-    
+
     color: white;
     background-color: aquamarine;
 }
+
 /* Cow */
-.games .cow{
+.games .cow {
     border: 2px inset grey;
     /* margin: 5px 5px 5px 5px; */
     padding: 5px;
-    
+
     color: white;
     background-color: pink;
 }
+
 /* Horror */
-.games .horror{
+.games .horror {
     border: 2px inset;
     /* margin: 5px 5px 5px 5px; */
     border-color: grey white white grey;
     padding: 5px;
-    
+
     color: white;
     background-color: #725752;
 }
 
 /* Projects Section */
-.projects .banner img{
+.projects .banner img {
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
-.projects .row{
+
+.projects .row {
     background-color: white;
     margin: 5px;
     border: 2px inset gray;
 }
-.projects .row .project{
+
+.projects .row .project {
     /* width: 100%; */
     display: flex;
     margin: 5px 5px 10px 5px;
 }
-.projects .row .project h4{
+
+.projects .row .project h4 {
     display: flex;
     align-items: center;
 }
-.projects .row .project .desc{
+
+.projects .row .project .desc {
     /* max-width: max-content; */
     border: 2px dashed grey;
     /* border-top: 0px;
     border-bottom: 0px; */
     width: 100%;
 }
+
 .projects .row .project .desc h4,
-.projects .row .project .desc p{
+.projects .row .project .desc p {
     text-align: left;
     margin: 2px 8px;
 }
 
 /* Arts Section */
-.art .banner img{
+.art .banner img {
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
+
 .art .gallery {
     background-color: black;
     display: grid;
@@ -259,24 +288,27 @@
 }
 
 /* Art Preview */
-.artpreview{
+.artpreview {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.900);
-    z-index: 9999; /* Ensures it stays on top */
+    z-index: 9999;
+    /* Ensures it stays on top */
 
     display: flex;
 }
-.artpreview .expanded{
+
+.artpreview .expanded {
     justify-content: center;
     margin: auto auto;
     width: 45%;
     position: relative;
 }
-.artpreview .expanded p{
+
+.artpreview .expanded p {
     line-height: 0px;
     position: absolute;
     color: white;
@@ -291,53 +323,62 @@
 /* Contacts */
 /* .contact{
 } */
-.contact .book{
+.contact .book {
     display: flex;
     /* padding: 0 10px 0 10px; */
     /* width: 100%; */
     margin: 2px;
 }
-.contact .banner img{
+
+.contact .banner img {
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
-.contact .intro{
+
+.contact .intro {
     padding: 0 5px 0 5px;
     margin: 0px;
     max-width: 40%;
     text-align: justify;
 }
-.contact p{
+
+.contact p {
     margin: 2px;
 }
-.contact .addresses{
+
+.contact .addresses {
     width: 100%;
     background-color: white;
     border: 2px inset grey;
     text-align: left;
 }
-.contact ul, .contact li{
+
+.contact ul,
+.contact li {
     list-style-type: none;
     padding: 0;
     margin: 2px;
 }
+
 .contact .addresses .long {
     display: block;
 }
+
 .contact .addresses .short {
     display: none;
 }
 
 /* Footer */
-footer{
+footer {
     margin: 0 auto 0;
     max-width: 960px;
     /* position: relative; */
     display: flex;
     justify-content: space-between;
 }
-footer p{
+
+footer p {
     color: white;
     margin: 2px;
 }
