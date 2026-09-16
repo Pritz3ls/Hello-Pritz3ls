@@ -178,6 +178,26 @@
 .games {
     margin: 5px 5px 5px 5px;
 }
+.games .available{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    cursor: pointer;
+}
+.games .available:hover{
+    filter: drop-shadow(2px 0 0 white) 
+        drop-shadow(-2px 0 0 white) 
+        drop-shadow(0 2px 0 white) 
+        drop-shadow(0 -2px 0 white);
+}
+.games .info .dev{
+    border: 2px grey dashed;
+    padding: 8px;
+}
+.games .info .dev .tag{
+    font-weight: bold;
+}
 
 /* Hell */
 .games .hell {
@@ -188,14 +208,13 @@
     background: #000000;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(72, 0, 0, 1) 90%, rgba(140, 0, 0, 1) 100%);
 }
-
-.games .hell .tag {
-    color: darkred;
-    font-weight: 800;
-    font-size: 3em;
+.games .hell .info {
+    text-align: justify;
 }
-
-.games .hell img {
+.games .hell .logo{
+    width: 30%;
+}
+.games .hell .gallery img {
     width: 40%;
     /* border: darkred solid 2px; */
 }
@@ -206,8 +225,20 @@
     /* margin: 5px 5px 5px 5px; */
     padding: 5px;
 
-    color: white;
-    background-color: aquamarine;
+    color: black;
+    background-color: white;
+}
+.games .baseball .info{
+    text-align: justify;
+}
+.games .baseball .logo{
+    width: 30%;
+}
+.games .baseball .back button{
+    color: black;
+}
+.games .baseball .back button:hover{
+    color: blue;
 }
 
 /* Cow */
@@ -217,7 +248,20 @@
     padding: 5px;
 
     color: white;
-    background-color: pink;
+    /* background-color: pink; */
+    background-image: url("../images/cow_tile.png");
+    background-repeat: repeat;
+    background-size: 5%;
+}
+.games .cow .info{
+    background-color: #793a80;
+    /* width: fit-content; */
+    padding: 5px;
+    color: white;
+    border-radius: 15px;
+}
+.games .cow .logo{
+    width: 40%;
 }
 
 /* Horror */

@@ -22,7 +22,7 @@
                 <img src="assets/icons/pc.png" alt="">
                 <p>Home</p>
             </button>
-            <button type="button" onclick="showPage('games')">
+            <button type="button" onclick="showGamesSection()">
                 <img src="assets/icons/projects.png" alt="" srcset="">
                 <p>Games</p>
             </button>
@@ -42,7 +42,7 @@
     </div>
 
     <!-- Landing -->
-    <div class="content" style="display: none;" id="landing">
+    <div class="content" style="display: block;" id="landing">
         <div class="titlebar">
             Home
         </div>
@@ -102,7 +102,7 @@
     </div>
 
     <!-- Games -->
-    <div class="content" style="display: block;" id="games">
+    <div class="content" style="display: none;" id="games">
         <div class="titlebar">
             Games
         </div>
@@ -143,20 +143,33 @@
                 </div>
 
                 <!-- <h2 class="tag">HellSprint</h2> -->
-                <img src="assets/banner/hellSprint-Logo.png" alt="">
+                <img class="logo" src="assets/banner/hell-logo.png" alt="">
                 <div class="info">
                     <p>HellSprint is a Fast Paced first person shooter where one aims to survive through an increasing
                         difficulty of swarms of enemies. Survive long enough and gain a ranking in the leaderboard, and
-                        prove you’re the best player out there.</p>
+                        prove you’re the best player out there.
+                    </p>
                 </div>
-                <div class="available">
-                    <p>Available on my Github link.</p>
+                <!-- <div class="available">
+                    <p>Available on my <a href="https://github.com/Pritz3ls/HellSprint.git">Github link.</a></p>
+                </div> -->
+                <img class="available" src="assets/images/available-github.png" alt="" srcset="">
+
+                <div class="gallery">
+                    <img src="assets/gamesgifs/hell1.gif" alt="" srcset="">
+                    <img src="assets/gamesgifs/hell2.gif" alt="" srcset="">
+                    <img src="assets/gamesgifs/hell3.gif" alt="" srcset="">
+                    <img src="assets/gamesgifs/hell4.gif" alt="" srcset="">
                 </div>
 
-                <img src="assets/gamesgifs/hell1.gif" alt="" srcset="">
-                <img src="assets/gamesgifs/hell2.gif" alt="" srcset="">
-                <img src="assets/gamesgifs/hell3.gif" alt="" srcset="">
-                <img src="assets/gamesgifs/hell4.gif" alt="" srcset="">
+                <div class="info">
+                    <p class="dev">
+                        I worked as the lead programmer of HellSprint, focusing on the core gameplay loop and the managers 
+                        responsible for coordinating the game's systems. This was an academic project during our third year, 
+                        where I worked on integrating SQLite with Unity to demonstrate the engine's capability to work with 
+                        SQL databases.
+                    </p>
+                </div>
             </div>
 
             <!-- BaseballDX -->
@@ -165,18 +178,28 @@
                     <button type="button" onclick="showBoxCoverMenu()">Go Back</button>
                 </div>
 
-                <h2>BaseballDX</h2>
+                <img class="logo" src="assets/images/baseball-logo.png" alt="">
                 <div class="info">
-                    <p>BaseballDX is a atari inspired baseball game mixed with Wii Baseball gameplay mechanics</p>
+                    <p>
+                        RetroBaseballDX is a simple baseball game with a retro 2D pixel artstyle and a simple gameplay
+                        loop. Score as much points and homeruns before you are out.
+                    </p>
                 </div>
-                <div class="available">
-                    <p>Live Demo available to play here!</p>
-                </div>
+                <img class="available" src="assets/images/available-demo.png" alt="" srcset="">
 
                 <img src="assets/images/baseball.gif" alt="" srcset="">
                 <img src="assets/images/baseball.gif" alt="" srcset="">
                 <img src="assets/images/baseball.gif" alt="" srcset="">
                 <img src="assets/images/baseball.gif" alt="" srcset="">
+                
+                <div class="info">
+                    <p class="dev">
+                        This is a personal project of mine and a creative practice project, i was inspired by the old SNES
+                        system and how simple yet enjoyable the gameplay loops of older games could be. I emulated the system by
+                        working on the game with intentional constraints or limitations, more specifically, limited art, a 
+                        limited number of systems, and strict use of event systems to keep the game simple and focused.
+                    </p>
+                </div>
             </div>
 
             <!-- Funi Cow Game -->
@@ -185,14 +208,13 @@
                     <button type="button" onclick="showBoxCoverMenu()">Go Back</button>
                 </div>
 
-                <h2>Funi Cow Game</h2>
+                <!-- <h2>Funi Cow Game</h2> -->
+                <img class="logo" src="assets/banner/funi-slide-logo.png" alt="">
                 <div class="info">
-                    <p>Funi Cow Game is a endless score maker game where you control a upside-down cow and perform
-                        tricks to gain scores and momentum.</p>
+                    <p>FuniCow Slideeeee is a endless sliding game where you control an escaped cow from it's impending
+                        butcher doom.</br>Perform tricks to gain speed and points to upgrade your run.</p>
                 </div>
-                <div class="available">
-                    <p>Live Demo available to play here!</p>
-                </div>
+                <img class="available" src="assets/images/available-itch.png" alt="" srcset="">
 
                 <img src="assets/images/cow.gif" alt="" srcset="">
                 <img src="assets/images/cow.gif" alt="" srcset="">
@@ -208,11 +230,11 @@
 
                 <h2>BleakRidge</h2>
                 <div class="info">
-                    <p>BleakRidge is a PSX-styled horror game mixed with cute characters but with a twisted and dark
-                        story.</p>
-                </div>
-                <div class="available">
-                    <p>TBD</p>
+                    <p>
+                        BleakRidge is a PSX-styled horror game that combines cute characters with dark and twisted humor. Set in a
+                        fictional location called BleakRidge, you are a recent newcomer in the town who soons discovers something is
+                        wrong with the town. Investigate the mysterious cult and uncover the lies beneath.
+                    </p>
                 </div>
 
                 <div class="gallery">
@@ -244,7 +266,7 @@
                 <div class="project">
                     <div class="desc">
                         <div class="title">
-                            <h4><img src="assets/icons/documents.png" alt="">ManuVox</h4>
+                            <h4><img src="assets/icons/documents.png" alt="">ManuVox | Unity . C# . MediaPipe . Java</h4>
                         </div>
                         <p>
                             I’m the lead developer of ManuVox, an offline Filipino Sign Language recognition application
@@ -259,7 +281,7 @@
                 </div>
                 <div class="project">
                     <div class="desc">
-                        <h4><img src="assets/icons/documents.png" alt="">Carbonet</h4>
+                        <h4><img src="assets/icons/documents.png" alt="">Carbonet | PHP . MySQL . Javascript . Python . Pytorch</h4>
                         <p>
                             Carbonet is a greenhouse gas emissions calculator built to process categorized environmental
                             data and
@@ -273,7 +295,7 @@
                 </div>
                 <div class="project">
                     <div class="desc">
-                        <h4><img src="assets/icons/documents.png" alt="">Win98Chat</h4>
+                        <h4><img src="assets/icons/documents.png" alt="">Win98Chat | Node.js · Express.js · REST API · Socket.IO</h4>
                         <p>
                             Win98Chat is a recreation of the old MSN Messenger experience from the Windows 98 era. I
                             used Node.js,
@@ -285,7 +307,7 @@
                 </div>
                 <div class="project">
                     <div class="desc">
-                        <h4><img src="assets/icons/documents.png" alt="">LyricsFinder</h4>
+                        <h4><img src="assets/icons/documents.png" alt="">LyricsFinder | HTML . CSS . Javascript . RestAPI</h4>
                         <p>
                             LyricsFinder is a project I worked on because I found it slow and difficult to find lyrics
                             for less common
@@ -310,12 +332,12 @@
             </div>
             <hr>
             <div class="gallery">
-                <img src="assets/arts/reserve.png" alt="Saved you a seat, Dream just for us." onclick="viewArt(this)">
-                <img src="assets/arts/cool.png" alt="Sunshine, Sunglass, Sunflower" onclick="viewArt(this)">
-                <img src="assets/arts/house.png" alt="Finding home in the wild." onclick="viewArt(this)">
-                <img src="assets/arts/broken.png" alt="Broken pieces, beatiful truths." onclick="viewArt(this)">
-                <img src="assets/arts/fallen.png" alt="Fallen Angel." onclick="viewArt(this)">
-                <img src="assets/arts/lost.png" alt="The ghost of touch, lingering in the dark."
+                <img src="assets/arts/reserve.webp" alt="Saved you a seat, Dream just for us." onclick="viewArt(this)">
+                <img src="assets/arts/cool.webp" alt="Sunshine, Sunglass, Sunflower" onclick="viewArt(this)">
+                <img src="assets/arts/house.webp" alt="Finding home in the wild." onclick="viewArt(this)">
+                <img src="assets/arts/broken.webp" alt="Broken pieces, beatiful truths." onclick="viewArt(this)">
+                <img src="assets/arts/fallen.webp" alt="Fallen Angel." onclick="viewArt(this)">
+                <img src="assets/arts/lost.webp" alt="The ghost of touch, lingering in the dark."
                     onclick="viewArt(this)">
             </div>
             <p></p>
@@ -389,7 +411,7 @@
     <p>
         Developed by Pritzels
     </p>
-    <p>
+    <p style="text-align: right;">
         Designed and Art by Pritzels
     </p>
 </footer>

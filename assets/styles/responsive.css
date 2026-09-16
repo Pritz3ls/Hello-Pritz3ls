@@ -14,6 +14,18 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+
+    .games .hell .gallery img {
+        width: 100%;
+        /* border: darkred solid 2px; */
+    }
+    .games .available{
+    position: absolute;
+        top: 0;
+        right: 0;
+        width: 35%;
+        cursor: pointer;
+    }
     
     .art .gallery {
         grid-template-columns: repeat(2, 1fr);

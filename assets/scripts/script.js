@@ -19,6 +19,13 @@ function hideAllPage() {
     }
 }
 
+// Unique function for Games Section
+function showGamesSection(){
+    showPage("games")
+    hideAllProjects()
+    showBoxCoverMenu();
+}
+
 // Box Cover Art
 function showProject(id) {
     hideAllProjects();
