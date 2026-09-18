@@ -19,8 +19,27 @@
         width: 100%;
         /* border: darkred solid 2px; */
     }
+    .games .cow .gallery{
+        display: block;
+        flex-wrap: none;
+    }
+    .games .cow .gallery img{
+        width: 100%;
+        /* object-fit: cover; */
+    }
+
+    .games .baseball .gallery{
+        display: block;
+        flex-wrap: none;
+        justify-content: none;
+        gap: 0px;
+    }
+    .games .baseball .gallery img {
+        width: 100%;
+    }
+
     .games .available{
-    position: absolute;
+        position: absolute;
         top: 0;
         right: 0;
         width: 35%;

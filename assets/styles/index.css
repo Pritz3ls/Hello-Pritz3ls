@@ -57,7 +57,7 @@
 
 .content .info {
     position: relative;
-    margin: 0em 2em 2em 2em;
+    margin: 0em 1em 0em 1em;
 }
 
 /* Landing Section */
@@ -155,6 +155,7 @@
     text-decoration: underline;
     color: blue;
     cursor: pointer;
+
 }
 
 .games .back {
@@ -209,13 +210,21 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgba(72, 0, 0, 1) 90%, rgba(140, 0, 0, 1) 100%);
 }
 .games .hell .info {
+    text-align: center;
+}
+.games .hell .dev {
     text-align: justify;
 }
 .games .hell .logo{
     width: 30%;
 }
+.games .hell .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .games .hell .gallery img {
-    width: 40%;
+    width: 45%;
     /* border: darkred solid 2px; */
 }
 
@@ -240,6 +249,15 @@
 .games .baseball .back button:hover{
     color: blue;
 }
+.games .baseball .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.games .baseball .gallery img{
+    width: 45%;
+}
 
 /* Cow */
 .games .cow {
@@ -262,6 +280,22 @@
 }
 .games .cow .logo{
     width: 40%;
+}
+.games .cow .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5px;
+    margin: 5px;
+
+    /* #bc4a9b */
+    background-color: #793a80;
+    border-radius: 15px;
+    width: fit-content;
+}
+.games .cow .gallery img{
+    width: 45%;
+    object-fit: cover;
 }
 
 /* Horror */
