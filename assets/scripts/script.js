@@ -1,4 +1,5 @@
-const pages = ['landing', 'games', 'arts', 'contact', 'projects']
+const pages = ['landing', 'games', 'contact', 'projects']
+// 'arts'
 let plen = pages.length;
 
 const projects = ['hell', 'baseball', 'cow', 'horror']
